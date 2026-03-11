@@ -116,6 +116,7 @@ I'm not the typical candidate for a cloud role — and I think that's exactly th
 - **I've actually implemented tech before** — Power BI, Sage, Essbase-Hyperion, automation projects. This isn't my first time learning a new system. I know how to get up to speed and make it work.
 - **I'm a fast, serious learner** — I've navigated M&A due diligence, multinational regulatory environments, and bank stress tests. I'm not easily overwhelmed. Cloud architecture is a challenge I'm genuinely enjoying.
 - **I work well with people** — I've led teams, managed stakeholders, and translated complexity into clarity at every level of an organisation. That doesn't switch off because I'm the newest person in the room.
+
 ---
 
 ## Labs & Projects
@@ -125,15 +126,16 @@ I'm not the typical candidate for a cloud role — and I think that's exactly th
 | Project | Description | AWS Services Used | Link |
 |---|---|---|---|
 | Coming soon | First lab projects in progress | — | — |
+
 ---
 
 ## Let's Connect
 
 If you're a recruiter, a fellow career changer, or just someone curious about what it looks like to pivot into cloud after 20 years in finance — I'd genuinely love to connect.
 
-- [LinkedIn](#) — add your link
-- [GitHub](#) — add your link
-- [Email](#) — add your email
+- [LinkedIn](https://www.linkedin.com/in/svitlana-dekhtiar/)
+- [GitHub](https://github.com/svitlasvitla777)
+- [Email](mailto:svitlasvitla@gmail.com)
 
 ---
 
