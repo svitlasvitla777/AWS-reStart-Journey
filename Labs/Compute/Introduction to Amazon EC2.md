@@ -10,6 +10,9 @@ and operational best practices in the AWS Management Console.
 
 ## Skills Demonstrated
 - Provisioned an EC2 instance with termination protection to prevent accidental deletion
+<img width="700" height="315" alt="image" src="https://github.com/user-attachments/assets/2e42a109-967b-44a1-8dd2-33e01d98c719" />
+
+
 - Monitored instance health and performance metrics via AWS CloudWatch
 - Configured and modified Security Groups to control inbound HTTP traffic
 - Scaled compute capacity by resizing the EC2 instance type — demonstrating elasticity
