@@ -21,14 +21,15 @@ and operational best practices in the AWS Management Console.
 - Configured and modified Security Groups to control inbound HTTP traffic
 <img width="330" height="200" alt="image" src="https://github.com/user-attachments/assets/ab3fec9b-282a-4851-8784-44dd2f0939ff" />
 
-<img width="220" height="70" alt="image" src="https://github.com/user-attachments/assets/0a1e1c34-bf03-4d31-8f9a-0a2b3ee00d5e" />
 
+<img width="220" height="70" alt="image" src="https://github.com/user-attachments/assets/0a1e1c34-bf03-4d31-8f9a-0a2b3ee00d5e" />
 
 
 - Scaled compute capacity by resizing the EC2 instance type — demonstrating elasticity
 <img width="715" height="150" alt="image" src="https://github.com/user-attachments/assets/cf5a9cdc-e7a5-492b-a96e-bf10c39f7f3a" />
 
-Change volume from 8 tp 10GiB
+Changed volume from 8 tp 10GiB
+
 <img width="600" height="150" alt="image" src="https://github.com/user-attachments/assets/2bf80be4-182c-4e6a-9a0a-51398743ec5a" />
 
 
