@@ -9,7 +9,7 @@ I like this format because it forces you to actually do things instead of only r
 
 ## Badge
 
-[![AWS Cloud Quest](Certifications%20%26%20Badges/aws-cloud-quest-cloud-practitioner-training-badge.png)](https://www.credly.com/badges/8621df92-4e25-41d1-a6ee-af4c4b18156b)
+[![AWS Cloud Quest](Certifications%20%26%20Badges/aws-cloud-quest-cloud-practitioner-training-badge.png)]
 
 Verification:  
 https://www.credly.com/badges/8621df92-4e25-41d1-a6ee-af4c4b18156b
