@@ -14,7 +14,9 @@ and operational best practices in the AWS Management Console.
 
 
 - Monitored instance health and performance metrics via AWS CloudWatch
-  <img width="700" height="315" alt="image" src="https://github.com/user-attachments/assets/60f9d259-e61e-4727-a893-89755f766edc" />
+<img width="720" height="315" alt="image" src="https://github.com/user-attachments/assets/691c54ca-5149-4ac1-b1d6-686dd0fc36dc" />
+
+
 
 - Configured and modified Security Groups to control inbound HTTP traffic
 - Scaled compute capacity by resizing the EC2 instance type — demonstrating elasticity
