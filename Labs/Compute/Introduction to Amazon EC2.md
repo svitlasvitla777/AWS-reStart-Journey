@@ -26,6 +26,8 @@ and operational best practices in the AWS Management Console.
 
 
 - Scaled compute capacity by resizing the EC2 instance type — demonstrating elasticity
+<img width="715" height="150" alt="image" src="https://github.com/user-attachments/assets/cf5a9cdc-e7a5-492b-a96e-bf10c39f7f3a" />
+
 - Validated termination protection behaviour before executing a clean instance teardown
 
 ## Key Takeaways
