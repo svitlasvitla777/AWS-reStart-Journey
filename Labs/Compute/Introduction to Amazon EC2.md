@@ -32,6 +32,9 @@ Changed volume from 8 tp 10GiB
 
 <img width="600" height="150" alt="image" src="https://github.com/user-attachments/assets/2bf80be4-182c-4e6a-9a0a-51398743ec5a" />
 
+<img width="650" height="335" alt="image" src="https://github.com/user-attachments/assets/cb2c47f0-190f-45c8-8979-b5bdd6b26b6c" />
+
+
 
 - Validated termination protection behaviour before executing a clean instance teardown
 
