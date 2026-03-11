@@ -8,69 +8,62 @@
 
 Hi, I'm **Svitlana**.
 
-For more than **20 years I worked as a CFO and senior finance leader** at companies like **Citibank, Astarta Holding, and Creatio**, working across **Ukraine, Switzerland, Italy, and the United States**. My career was about building things — finance teams, reporting systems, Power BI dashboards, automation processes, and decision frameworks that CEOs relied on.
+I spent over 20 years as a CFO — at Citibank, Astarta Holding, Creatio — working across Ukraine, Switzerland, Italy, and the US. I built finance teams from scratch, helped CEOs make big decisions, and spent a lot of time staring at numbers that told stories about how businesses actually worked.
 
-But the truth is: I was always fascinated by the **technology behind the numbers**.
+But here's the thing nobody expected: I was always the finance person who got excited about the tech side.
 
-Today I'm **reinventing myself through the AWS re/Start programme**, diving deep into **cloud computing, infrastructure, and modern tech architecture**. I'm bringing my finance brain, my curiosity, and a lot of energy into learning how the cloud actually works.
+I was the one pushing for better systems. The one who wanted to understand *how* the tools worked, not just use them. The one who built Power BI dashboards when most finance teams were still on spreadsheets.
 
-And honestly? I love it.
+Eventually I asked myself an honest question: why am I always working *around* technology when I could actually learn it properly?
+
+So I did something about it. I joined **AWS re/Start** — a full-time cloud training programme — and I haven't looked back.
+
+It's week 2. I'm learning fast. And yes, I'm loving it.
 
 ---
 
 ## Why Cloud? Why Now?
 
-Throughout my finance career I was constantly working **at the intersection of business and technology**.
+This isn't a crisis decision or a random pivot. It's been building for years.
 
-I implemented reporting systems.  
-I automated finance processes.  
-I worked with software companies and IT teams.  
-I used AI tools and built Power BI dashboards long before they became standard.
+Throughout my finance career I was always the person who wanted to go deeper — deeper into the systems, the data, the infrastructure behind the numbers. I implemented reporting tools. I pushed automation. I worked hand-in-hand with IT teams and software companies.
 
-Eventually I realised something:
+But there was always a ceiling. A point where I'd hand things over to the "tech people."
 
-I didn't just want to *use* technology.  
-I wanted to **understand the infrastructure that powers it**.
+I don't want that ceiling anymore.
 
-Cloud computing sits exactly where I love to work —  
-**real business problems + powerful technology solutions.**
+Cloud computing is where business problems meet technology solutions — and that's exactly the space I've always loved working in. Now I'm learning the infrastructure side properly, from the ground up.
+
+It feels like the missing piece.
 
 ---
 
 ## What My Finance Background Brings to Cloud
 
-My finance career gives me a perspective many technologists don't start with.
+Here's what's interesting about coming from finance: a lot of cloud thinking is actually finance thinking in disguise.
 
-- **Cost Optimisation Mindset** — I naturally think in terms of cost efficiency, budgets, and resource optimisation, which is critical in AWS environments where every service has a price tag.
-- **Data & Analytics Thinking** — Years of working with data models, dashboards, and business metrics translate directly into cloud data architecture, monitoring, and reporting.
-- **Governance & Risk Management** — Experience building controls, compliance frameworks, and financial governance maps naturally to cloud security, IAM policies, and infrastructure governance.
-- **Executive Communication** — I know how to translate complex technical concepts into clear business language for leadership and stakeholders — a rare skill in tech teams.
+- **Cost Optimisation** — I've spent 20 years watching where money goes and why. In AWS, every service has a cost. I think about that instinctively.
+- **Data & Analytics** — Building dashboards, financial models, and reporting frameworks? That's cloud data architecture with different labels.
+- **Governance & Risk** — I built compliance frameworks and financial controls for international banks. IAM policies and infrastructure governance feel familiar.
+- **Communicating complexity** — I've explained subordinated debt structures to boards and P&L variances to CEOs. I can make technical concepts land clearly for any audience.
 
-In cloud environments, **technology decisions are business decisions.**  
-That bridge is where I thrive.
+The crossover is real. And I think it makes me more useful in a cloud role, not less.
 
 ---
 
 ## What I Do Daily in AWS re/Start
 
-Every day of this programme feels like building a new muscle.
+Honestly, every day is a bit of a workout.
 
-**Morning — Theory & Concepts**  
-I start with learning AWS concepts, reading documentation, watching labs, and understanding how services like EC2, S3, IAM, and VPC actually work under the hood.
+**Morning** — We start with theory. Concepts, documentation, videos, instructor sessions. I take a lot of notes. I ask a lot of questions. I want to understand the *why* behind everything, not just the steps.
 
-**Afternoon — Hands-On in the AWS Console**  
-This is my favourite part. I jump into the AWS Console, run labs, deploy resources, break things, fix them, and learn *why* something didn't work. The troubleshooting is where the real learning happens.
+**Afternoon** — Hands-on labs in the AWS Console. This is where it gets real. Deploying resources, configuring services, running into errors, figuring out what went wrong. The troubleshooting is genuinely my favourite part — it's where the understanding actually sticks.
 
-**The Finance Brain Never Switches Off**  
-When we study AWS cost management, I immediately think about P&L structures and cost allocation.  
-When we learn IAM and security, I see parallels with risk management and governance frameworks I've built in finance.  
-That crossover makes every concept click faster.
+**Throughout the day** — My finance brain keeps making connections. We cover AWS cost management and I immediately think: this is just cost allocation with cloud labels. We cover IAM and I think: this is access governance, I've built versions of this for banks. Those moments make everything click faster.
 
-**Evening — Review & Reflect**  
-Notes, GitHub updates, and preparing for the next day. I treat this programme the same way I treated every finance role — with full commitment.
+**Evening** — Review, notes, GitHub. I treat this programme the way I treated every senior role I've had — with full attention and full commitment.
 
-Learning cloud is challenging.  
-But building something new at this stage of my career is incredibly energising.
+It's intense. It's also the most energised I've felt about learning in years.
 
 ---
 
@@ -92,8 +85,8 @@ But building something new at this stage of my career is incredibly energising.
 | Week | Topic | Key Takeaway | Status |
 |---|---|---|---|
 | 1 | Cloud Foundations | Understanding what cloud computing is and why businesses adopt it | Complete |
-| 2 | AWS Global Infrastructure | Regions, Availability Zones, shared responsibility model | Complete |
-| 3 | AWS Core Services | EC2, S3, and basic architecture concepts | In Progress |
+| 2 | AWS Global Infrastructure | Regions, Availability Zones, shared responsibility model | In Progress |
+| 3 | AWS Core Services | EC2, S3, and basic architecture concepts | Coming Soon |
 | 4 | Networking Fundamentals | VPC, subnets, routing, security groups | Coming Soon |
 | 5 | Identity & Access Management | IAM users, roles, policies, and security best practices | Coming Soon |
 | 6 | Databases in the Cloud | RDS, database fundamentals, storage types | Coming Soon |
@@ -110,35 +103,33 @@ But building something new at this stage of my career is incredibly energising.
 
 **Working Towards: AWS Certified Cloud Practitioner (CLF-C02)**
 
-Currently on Week 3 of 12. Expected completion: end of programme.
+Currently on Week 2 of 12. Expected completion: end of programme.
 
 ---
 
 ## Why I'd Be a Great Hire
 
-I'm not a typical career changer. Here's what I bring that's genuinely different:
+I'm not the typical candidate for a cloud role — and I think that's exactly the point.
 
-- **International experience across 4 countries** — Ukraine, Switzerland, Italy, and the USA. I know how to operate in complex, cross-functional, multicultural environments.
-- **Rare finance + cloud crossover** — I understand both the business impact of cloud decisions *and* the technical foundations. That combination is hard to find.
-- **Proven track record of implementing technology** — I've led Power BI rollouts, accounting system migrations, and automation projects — I'm not starting from zero.
-- **Fast learner with 20 years of problem-solving** — I've navigated M&A due diligence, multinational tax structures, and bank stress tests. Cloud architecture? I'll figure it out.
-- **I communicate across teams** — I've sat at executive tables and translated complexity into clarity. I can do the same between tech teams and business stakeholders.
-
+- **I've operated at the most senior levels** — CFO, board advisor, executive committee member across four countries. I know what good decision-making looks like and how to support it with data and infrastructure.
+- **I bridge finance and technology** — Most people sit on one side of that fence. I've spent my career on both, which means I understand cloud decisions in their full business context.
+- **I've actually implemented tech before** — Power BI, Sage, Essbase-Hyperion, automation projects. This isn't my first time learning a new system. I know how to get up to speed and make it work.
+- **I'm a fast, serious learner** — I've navigated M&A due diligence, multinational regulatory environments, and bank stress tests. I'm not easily overwhelmed. Cloud architecture is a challenge I'm genuinely enjoying.
+- **I work well with people** — I've led teams, managed stakeholders, and translated complexity into clarity at every level of an organisation. That doesn't switch off because I'm the newest person in the room.
 ---
 
 ## Labs & Projects
 
-*This section is updated as I complete hands-on work throughout the programme.*
+*Updated as I complete hands-on work throughout the programme.*
 
 | Project | Description | AWS Services Used | Link |
 |---|---|---|---|
 | Coming soon | First lab projects in progress | — | — |
-
 ---
 
 ## Let's Connect
 
-I'd love to connect — whether you're a recruiter, a fellow cloud learner, or someone curious about career pivots into tech.
+If you're a recruiter, a fellow career changer, or just someone curious about what it looks like to pivot into cloud after 20 years in finance — I'd genuinely love to connect.
 
 - [LinkedIn](#) — add your link
 - [GitHub](#) — add your link
@@ -146,5 +137,5 @@ I'd love to connect — whether you're a recruiter, a fellow cloud learner, or s
 
 ---
 
-*This README is a living document — updated weekly as I progress through the programme.  
+*This README is a living document — updated weekly as I go through the programme.
 Last updated: March 2026*
