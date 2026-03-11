@@ -19,6 +19,12 @@ and operational best practices in the AWS Management Console.
 
 
 - Configured and modified Security Groups to control inbound HTTP traffic
+<img width="330" height="200" alt="image" src="https://github.com/user-attachments/assets/ab3fec9b-282a-4851-8784-44dd2f0939ff" />
+
+<img width="220" height="70" alt="image" src="https://github.com/user-attachments/assets/0a1e1c34-bf03-4d31-8f9a-0a2b3ee00d5e" />
+
+
+
 - Scaled compute capacity by resizing the EC2 instance type — demonstrating elasticity
 - Validated termination protection behaviour before executing a clean instance teardown
 
