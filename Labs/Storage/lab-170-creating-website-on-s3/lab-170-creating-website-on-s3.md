@@ -78,24 +78,36 @@ Successful response:
 }
 ```
 
+![Bucket Created CLI](screenshots/01-bucket-created-cli.png)
+
 > Note: The `--create-bucket-configuration LocationConstraint` flag is required for any region other than `us-east-1`. The command fails without it.
+
+The bucket is now visible in the S3 console:
+
+![Bucket in Console](screenshots/02-bucket-in-console.png)
 
 ---
 
 ### Task 4 — Create an IAM User with S3 Full Access
 
 ```bash
-# Create the user
 aws iam create-user --user-name awsS3user
+```
 
-# Set a login password
+![IAM User Created](screenshots/03-iam-user-created.png)
+
+```bash
 aws iam create-login-profile --user-name awsS3user --password Training123!
 ```
+
+![IAM Login Profile Created](screenshots/04-iam-login-profile-created.png)
 
 To find the right managed policy:
 ```bash
 aws iam list-policies --query "Policies[?contains(PolicyName,'S3')]"
 ```
+
+![IAM List Policies](screenshots/05-iam-list-policies.png)
 
 The policy to use is `AmazonS3FullAccess`.
 
@@ -104,6 +116,10 @@ aws iam attach-user-policy \
   --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess \
   --user-name awsS3user
 ```
+
+After attaching the policy, logged back in as `awsS3user` — the bucket is now visible in the S3 console:
+
+![S3 Bucket Visible](screenshots/06-s3-bucket-visible.png)
 
 > What I learned here: a brand new IAM user has zero permissions by default. When I first logged in as `awsS3user`, I could not even see the bucket I just created. The policy has to be explicitly attached.
 
@@ -115,7 +131,12 @@ Done through the AWS Management Console:
 
 1. Open the bucket > Permissions tab
 2. Block public access > Edit > uncheck "Block all public access" > Save
+
+![Public Access Off](screenshots/07-public-access-off.png)
+
 3. Object Ownership > Edit > enable ACLs > acknowledge > Save
+
+![ACLs Enabled](screenshots/08-acls-enabled.png)
 
 > Public access is blocked by default on every new S3 bucket. You have to actively turn it off before the static website will be reachable from a browser.
 
@@ -130,10 +151,7 @@ cd static-website
 ls
 ```
 
-Expected output:
-```
-index.html   css/   images/
-```
+![Files Extracted](screenshots/09-files-extracted.png)
 
 ---
 
@@ -152,12 +170,21 @@ aws s3 cp /home/ec2-user/sysops-activity-files/static-website/ \
   --acl public-read
 ```
 
+![Files Uploaded](screenshots/10-files-uploaded-cli.png)
+
 Verify the upload:
 ```bash
 aws s3 ls <my-bucket>
 ```
 
-Website URL:
+In the S3 console under the Properties tab, Static website hosting is now Enabled:
+
+![Static Hosting Enabled](screenshots/11-static-hosting-enabled.png)
+
+The website is live:
+
+![Website Live](screenshots/12-website-live.png)
+
 ```
 http://<my-bucket>.s3-website-us-west-2.amazonaws.com
 ```
@@ -183,6 +210,8 @@ aws s3 cp /home/ec2-user/sysops-activity-files/static-website/ \
   --acl public-read
 ```
 
+![Script Contents](screenshots/13-script-contents-update.png)
+
 Make it executable:
 ```bash
 chmod +x update-website.sh
@@ -200,7 +229,9 @@ Then ran the script:
 ./update-website.sh
 ```
 
-Refreshed the browser and the changes showed up right away.
+Refreshed the browser and the changes showed up right away:
+
+![Website Updated](screenshots/14-website-updated.png)
 
 ---
 
@@ -214,61 +245,14 @@ aws s3 sync /home/ec2-user/sysops-activity-files/static-website/ \
   --acl public-read
 ```
 
+![S3 Sync Output](screenshots/15-s3-sync-output.png)
+
 | Command | Behavior |
 |---|---|
 | `s3 cp --recursive` | Uploads all files every time |
 | `s3 sync` | Uploads only files that have changed |
 
 The difference was clear — `s3 sync` only pushed the one file I actually modified, while `s3 cp` was reuploading everything each time. For a small site it does not matter much, but at scale it would save a lot of time and transfer cost.
-
----
-
-## Screenshots
-
-All screenshots are in the [`screenshots/`](./screenshots/) folder.
-
-### Task 3 — S3 Bucket Created
-| Description | Screenshot |
-|---|---|
-| Terminal: JSON response confirming bucket creation | ![Bucket Created CLI](screenshots/01-bucket-created-cli.png) |
-| S3 console: new bucket listed | ![Bucket in Console](screenshots/02-bucket-in-console.png) |
-
-### Task 4 — IAM User and Policy
-| Description | Screenshot |
-|---|---|
-| Terminal: `aws iam create-user` success response | ![IAM User Created](screenshots/03-iam-user-created.png) |
-| Terminal: `aws iam create-login-profile` success response | ![IAM Login Profile Created](screenshots/04-iam-login-profile-created.png) |
-| Terminal: `aws iam list-policies` showing S3 policies | ![IAM List Policies](screenshots/05-iam-list-policies.png) |
-| S3 console: bucket visible while logged in as awsS3user | ![S3 Bucket Visible](screenshots/06-s3-bucket-visible.png) |
-
-### Task 5 — Bucket Permissions
-| Description | Screenshot |
-|---|---|
-| S3 Permissions tab: Block all public access is off | ![Public Access Off](screenshots/07-public-access-off.png) |
-| S3 Permissions tab: Object Ownership — ACLs enabled | ![ACLs Enabled](screenshots/08-acls-enabled.png) |
-
-### Task 6 — Extract Files
-| Description | Screenshot |
-|---|---|
-| Terminal: `ls` output showing index.html, css/ and images/ | ![Files Extracted](screenshots/09-files-extracted.png) |
-
-### Task 7 — Upload and Website Live
-| Description | Screenshot |
-|---|---|
-| Terminal: `aws s3 cp` upload output | ![Files Uploaded](screenshots/10-files-uploaded-cli.png) |
-| S3 Properties tab: Static website hosting enabled | ![Static Hosting Enabled](screenshots/11-static-hosting-enabled.png) |
-| The live Cafe and Bakery website in the browser | ![Website Live](screenshots/12-website-live.png) |
-
-### Task 8 — Deployment Script and Color Changes
-| Description | Screenshot |
-|---|---|
-| Terminal: script content after pasting into vi editor | ![Script Contents](screenshots/13-script-contents-update.png) |
-| Browser: website after the color update | ![Website Updated](screenshots/14-website-updated.png) |
-
-### Optional Challenge — s3 sync
-| Description | Screenshot |
-|---|---|
-| Terminal: `aws s3 sync` output showing only the changed file uploaded | ![S3 Sync Output](screenshots/15-s3-sync-output.png) |
 
 ---
 
