@@ -6,8 +6,6 @@ In this lab I used AWS CLI commands from an Amazon EC2 instance to host a static
 
 **Services used:** Amazon S3, IAM, Amazon EC2, AWS CLI, AWS Systems Manager
 
-**Duration:** ~45 minutes
-
 ---
 
 ## Objectives
