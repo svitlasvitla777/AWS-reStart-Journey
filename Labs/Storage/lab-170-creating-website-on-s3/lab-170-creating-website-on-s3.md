@@ -6,6 +6,8 @@ In this lab I used AWS CLI commands from an Amazon EC2 instance to host a static
 
 **Services used:** Amazon S3, IAM, Amazon EC2, AWS CLI, AWS Systems Manager
 
+**Duration:** ~45 minutes
+
 ---
 
 ## Objectives
@@ -260,7 +262,7 @@ All screenshots are in the [`screenshots/`](./screenshots/) folder.
 ### Task 8 — Deployment Script and Color Changes
 | Description | Screenshot |
 |---|---|
-| Terminal: `cat update-website.sh` showing script contents with bucket name | ![Script Contents](screenshots/13-script-contents.png) |
+| Terminal: script content after pasting into vi editor | ![Script Contents](screenshots/13-script-contents-update.png) |
 | Browser: website after the color update | ![Website Updated](screenshots/14-website-updated.png) |
 
 ### Optional Challenge — s3 sync
