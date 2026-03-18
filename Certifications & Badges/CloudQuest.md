@@ -6,7 +6,9 @@ During the AWS re/Start programme I worked through AWS Cloud Quest — a gamifie
 
 ## Badge
 
-[![AWS Cloud Quest Cloud Practitioner](../Certifications%20%26%20Badges/screenshots/aws-cloud-quest-cloud-practitioner-training-badge.png)](https://www.credly.com/badges/8621df92-4e25-41d1-a6ee-af4c4b18156b)
+<a href="https://www.credly.com/badges/8621df92-4e25-41d1-a6ee-af4c4b18156b">
+  <img src="screenshots/aws-cloud-quest-cloud-practitioner-training-badge.png" width="200"/>
+</a>
 
 Verify this badge on Credly: [https://www.credly.com/badges/8621df92-4e25-41d1-a6ee-af4c4b18156b](https://www.credly.com/badges/8621df92-4e25-41d1-a6ee-af4c4b18156b)
 
