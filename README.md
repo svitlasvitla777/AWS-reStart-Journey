@@ -1,73 +1,24 @@
-# From CFO to Cloud — Svitlana's AWS re/Start Journey
+# Svitlana Dekhtiar — Cloud Financial Management | FinOps | Finance × AWS
 
-**20+ years leading finance. Now learning the cloud infrastructure that powers modern business.**
+**Building the technical foundation to work at the intersection of cloud infrastructure and business strategy.**
 
----
-
-## My Story
-
-Hi, I'm **Svitlana**.
-
-I spent over 20 years as a CFO — at Citibank, Astarta Holding, Creatio — working across Ukraine, Switzerland, Italy, and the US. I built finance teams from scratch, helped CEOs make big decisions, and spent a lot of time staring at numbers that told stories about how businesses actually worked.
-
-But here's the thing nobody expected: I was always the finance person who got excited about the tech side.
-
-I was the one pushing for better systems. The one who wanted to understand *how* the tools worked, not just use them. The one who built Power BI dashboards when most finance teams were still on spreadsheets.
-
-Eventually I asked myself an honest question: why am I always working *around* technology when I could actually learn it properly?
-
-So I did something about it. I joined **AWS re/Start** — a full-time cloud training programme — and I haven't looked back.
-
-It's week 2. I'm learning fast. And yes, I'm loving it.
+![AWS re/Start](https://img.shields.io/badge/AWS-re%2FStart-orange?style=flat&logo=amazon-aws)
+![Status](https://img.shields.io/badge/Status-Active-blue)
+![Focus](https://img.shields.io/badge/Focus-FinOps%20%7C%20Cloud%20Architecture-green)
 
 ---
 
-## Why Cloud? Why Now?
+## Labs & Projects
 
-This isn't a crisis decision or a random pivot. It's been building for years.
+*Updated as I complete hands-on work throughout the programme.*
 
-Throughout my finance career I was always the person who wanted to go deeper — deeper into the systems, the data, the infrastructure behind the numbers. I implemented reporting tools. I pushed automation. I worked hand-in-hand with IT teams and software companies.
-
-But there was always a ceiling. A point where I'd hand things over to the "tech people."
-
-I don't want that ceiling anymore.
-
-Cloud computing is where business problems meet technology solutions — and that's exactly the space I've always loved working in. Now I'm learning the infrastructure side properly, from the ground up.
-
-It feels like the missing piece.
+| Lab | Category | Description | AWS Services Used | Link |
+|---|---|---|---|---|
+| Lab 170 | Storage | Hosted a static website on S3 using AWS CLI — created an S3 bucket, set up IAM user with S3 access, uploaded files, and wrote a deployment script | S3 · IAM · EC2 · AWS CLI | [View](Labs/Storage/lab-170-creating-website-on-s3/lab-170-creating-website-on-s3.md) |
 
 ---
 
-## What My Finance Background Brings to Cloud
-
-Here's what's interesting about coming from finance: a lot of cloud thinking is actually finance thinking in disguise.
-
-- **Cost Optimisation** — I've spent 20 years watching where money goes and why. In AWS, every service has a cost. I think about that instinctively.
-- **Data & Analytics** — Building dashboards, financial models, and reporting frameworks? That's cloud data architecture with different labels.
-- **Governance & Risk** — I built compliance frameworks and financial controls for international banks. IAM policies and infrastructure governance feel familiar.
-- **Communicating complexity** — I've explained subordinated debt structures to boards and P&L variances to CEOs. I can make technical concepts land clearly for any audience.
-
-The crossover is real. And I think it makes me more useful in a cloud role, not less.
-
----
-
-## What I Do Daily in AWS re/Start
-
-Honestly, every day is a bit of a workout.
-
-**Morning** — We start with theory. Concepts, documentation, videos, instructor sessions. I take a lot of notes. I ask a lot of questions. I want to understand the *why* behind everything, not just the steps.
-
-**Afternoon** — Hands-on labs in the AWS Console. This is where it gets real. Deploying resources, configuring services, running into errors, figuring out what went wrong. The troubleshooting is genuinely my favourite part — it's where the understanding actually sticks.
-
-**Throughout the day** — My finance brain keeps making connections. We cover AWS cost management and I immediately think: this is just cost allocation with cloud labels. We cover IAM and I think: this is access governance, I've built versions of this for banks. Those moments make everything click faster.
-
-**Evening** — Review, notes, GitHub. I treat this programme the way I treated every senior role I've had — with full attention and full commitment.
-
-It's intense. It's also the most energised I've felt about learning in years.
-
----
-
-## Skills I'm Building
+## Skills I Am Building
 
 | Domain | Technologies |
 |---|---|
@@ -77,6 +28,54 @@ It's intense. It's also the most energised I've felt about learning in years.
 | Networking | IP addressing · Subnets · Routing · Security groups |
 | Cloud Security | IAM policies · Access management · Compliance |
 | DevOps Foundations | Git · GitHub · Infrastructure thinking |
+
+---
+
+## What I Am Building
+
+The companies that win in cloud are not the ones with the best engineers alone — they are the ones where technical decisions and business strategy speak the same language.
+
+That gap is where I work.
+
+I am combining 20+ years of senior finance leadership with hands-on AWS technical training to operate at exactly that intersection. Not a CFO who hands things to the tech team. Not a cloud engineer who does not understand the business. Someone who genuinely understands both — and can make them work together.
+
+---
+
+## Why FinOps and Cloud Make Sense for Me
+
+FinOps — cloud financial management — is one of the fastest growing specialisms in the industry. It requires exactly the combination that most people do not have: deep cloud technical knowledge and serious financial acumen.
+
+Most FinOps practitioners come from one side or the other. Very few have operated at CFO level across international organisations *and* understand cloud infrastructure from the ground up.
+
+That is the gap I am filling deliberately.
+
+**What I bring from finance:**
+- 20+ years managing P&L, capital allocation, and cost optimisation across Citibank, Astarta Holding, and Creatio
+- Built financial governance frameworks for international banks and multinational organisations
+- Led technology implementation projects — Power BI, Sage, Essbase-Hyperion — as the finance executive who pushed automation rather than avoided it
+- Translated complex financial and operational data into decisions at board and CEO level across Ukraine, Switzerland, Italy, and the US
+
+**What I am adding now:**
+- AWS infrastructure — EC2, S3, IAM, VPC, RDS, Lambda, CloudWatch
+- Linux, Python scripting, and automation
+- Networking fundamentals and cloud security
+- Hands-on lab experience deploying and managing AWS resources
+
+---
+
+## My Background
+
+I spent 20+ years as a CFO and senior finance executive across Ukraine, Switzerland, Italy, and the US. Throughout that career I was consistently the finance leader who went deepest into the technology side — pushing for better systems, implementing reporting tools, and working directly with IT and software teams rather than simply handing things over.
+
+That instinct — to understand the infrastructure behind the numbers, not just the numbers themselves — is what brought me here. Joining AWS re/Start was not a backup plan. It was a deliberate move to close the one gap in a profile that already sits at the intersection of finance and technology.
+
+---
+
+## Certifications
+
+**Working Towards: AWS Certified Cloud Practitioner (CLF-C02)**
+
+Expected completion: end of programme.
 
 ---
 
@@ -99,45 +98,16 @@ It's intense. It's also the most energised I've felt about learning in years.
 
 ---
 
-## Certifications
+## Who I Am Looking to Work With
 
-**Working Towards: AWS Certified Cloud Practitioner (CLF-C02)**
+I am interested in roles and organisations where cloud infrastructure and business strategy genuinely need to talk to each other — FinOps, cloud consulting, technical account management, or cloud-enabled finance transformation.
 
-Currently on Week 2 of 12. Expected completion: end of programme.
-
----
-
-## Why I'd Be a Great Hire
-
-I'm not the typical candidate for a cloud role — and I think that's exactly the point.
-
-- **I've operated at the most senior levels** — CFO, board advisor, executive committee member across four countries. I know what good decision-making looks like and how to support it with data and infrastructure.
-- **I bridge finance and technology** — Most people sit on one side of that fence. I've spent my career on both, which means I understand cloud decisions in their full business context.
-- **I've actually implemented tech before** — Power BI, Sage, Essbase-Hyperion, automation projects. This isn't my first time learning a new system. I know how to get up to speed and make it work.
-- **I'm a fast, serious learner** — I've navigated M&A due diligence, multinational regulatory environments, and bank stress tests. I'm not easily overwhelmed. Cloud architecture is a challenge I'm genuinely enjoying.
-- **I work well with people** — I've led teams, managed stakeholders, and translated complexity into clarity at every level of an organisation. That doesn't switch off because I'm the newest person in the room.
-
----
-
-## Labs & Projects
-
-*Updated as I complete hands-on work throughout the programme.*
-
-| Project | Description | AWS Services Used | Link |
-|---|---|---|---|
-| Coming soon | First lab projects in progress | — | — |
+If you are building a team where financial seniority and technical cloud knowledge are both valued, I would like to talk.
 
 ---
 
 ## Let's Connect
 
-If you're a recruiter, a fellow career changer, or just someone curious about what it looks like to pivot into cloud after 20 years in finance — I'd genuinely love to connect.
-
 - [LinkedIn](https://www.linkedin.com/in/svitlana-dekhtiar/)
 - [GitHub](https://github.com/svitlasvitla777)
 - [Email](mailto:svitlasvitla@gmail.com)
-
----
-
-*This README is a living document — updated weekly as I go through the programme.
-Last updated: March 2026*
