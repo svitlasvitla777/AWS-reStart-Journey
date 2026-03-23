@@ -1,6 +1,6 @@
 # Lab 171 — Creating Amazon EC2 Instances
 
-> **AWS Skill Builder Lab** | Duration: ~45 minutes | Region: us-west-2 (Oregon)
+> **AWS Skill Builder Lab** 
 
 ## About This Lab
 
