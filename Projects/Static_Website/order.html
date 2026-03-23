@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online — The Train Café</title>
+    <meta name="description" content="Order online from The Train Café. Choose from our menu of international dishes and collect your order at the station.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="nav-left">
+                <img src="images/Logo.jpg" alt="The Train Café" class="mini-logo">
+                <nav class="nav-links">
+                    <a href="index.html#about-section">About Us</a>
+                    <a href="index.html#menu-section">Menu</a>
+                    <a href="booking.html">Reservation</a>
+                    <a href="order.html">Order Online</a>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="booking.html" class="btn-reserve">Reserve a Table</a>
+                <div class="lang-selector"><button>EN <span>&#8964;</span></button></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="hero-overlay">
+            <h1>Order for Collection</h1>
+            <p>Choose your destination, we'll prepare the rest</p>
+        </div>
+    </section>
+
+    <div class="order-layout">
+
+        <!-- ── MENU PICKER ── -->
+        <div class="menu-picker">
+            <a href="index.html" class="back-link">Back to The Train Café</a>
+            <h2 class="section-title">Choose Your Items</h2>
+            <p class="form-tagline">"Where are you going tonight?"</p>
+
+            <h3>Destinations — Main Dishes</h3>
+
+            <div class="menu-item" data-name="Paris Morning Croissant Plate" data-price="14.00">
+                <img src="images/Croissant.jpg" alt="Paris">
+                <div class="menu-item-info">
+                    <h4>Paris Morning Croissant Plate</h4>
+                    <p>Croissant, scrambled eggs, smoked salmon</p>
+                </div>
+                <span class="menu-item-price">CHF 14.00</span>
+                <div class="qty-control">
+                    <button class="qty-btn" onclick="changeQty(this,-1)" aria-label="Decrease">&#8722;</button>
+                    <span class="qty-num">0</span>
+                    <button class="qty-btn" onclick="changeQty(this,1)" aria-label="Increase">&#43;</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-name="Tokyo Night Ramen" data-price="18.50">
+                <img src="images/Ramen.jpg" alt="Tokyo">
+                <div class="menu-item-info">
+                    <h4>Tokyo Night Ramen</h4>
+                    <p>Rich broth, noodles, soft egg, marinated pork</p>
+                </div>
+                <span class="menu-item-price">CHF 18.50</span>
+                <div class="qty-control">
+                    <button class="qty-btn" onclick="changeQty(this,-1)" aria-label="Decrease">&#8722;</button>
+                    <span class="qty-num">0</span>
+                    <button class="qty-btn" onclick="changeQty(this,1)" aria-label="Increase">&#43;</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-name="Istanbul Sunset Mezze" data-price="16.00">
+                <img src="images/Meze.jpg" alt="Istanbul">
+                <div class="menu-item-info">
+                    <h4>Istanbul Sunset Mezze</h4>
+                    <p>Hummus, grilled vegetables, warm flatbread</p>
+                </div>
+                <span class="menu-item-price">CHF 16.00</span>
+                <div class="qty-control">
+                    <button class="qty-btn" onclick="changeQty(this,-1)" aria-label="Decrease">&#8722;</button>
+                    <span class="qty-num">0</span>
+                    <button class="qty-btn" onclick="changeQty(this,1)" aria-label="Increase">&#43;</button>
+                </div>
+            </div>
+
+            <h3>Sweet Stops — Desserts</h3>
+
+            <div class="menu-item" data-name="Lisbon Caramel Flan" data-price="9.00">
+                <img src="images/Flan.jpg" alt="Flan">
+                <div class="menu-item-info">
+                    <h4>Lisbon Caramel Flan</h4>
+                    <p>Silky custard with golden caramel</p>
+                </div>
+                <span class="menu-item-price">CHF 9.00</span>
+                <div class="qty-control">
+                    <button class="qty-btn" onclick="changeQty(this,-1)" aria-label="Decrease">&#8722;</button>
+                    <span class="qty-num">0</span>
+                    <button class="qty-btn" onclick="changeQty(this,1)" aria-label="Increase">&#43;</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-name="Vienna Chocolate Dream" data-price="10.00">
+                <img src="images/Vienna%20Cake.jpg" alt="Chocolate">
+                <div class="menu-item-info">
+                    <h4>Vienna Chocolate Dream</h4>
+                    <p>Warm molten core with vanilla cream</p>
+                </div>
+                <span class="menu-item-price">CHF 10.00</span>
+                <div class="qty-control">
+                    <button class="qty-btn" onclick="changeQty(this,-1)" aria-label="Decrease">&#8722;</button>
+                    <span class="qty-num">0</span>
+                    <button class="qty-btn" onclick="changeQty(this,1)" aria-label="Increase">&#43;</button>
+                </div>
+            </div>
+
+            <h3>Drinks</h3>
+
+            <div class="menu-item" data-name="Espresso Express" data-price="4.00">
+                <img src="images/Espresso.jpg" alt="Espresso">
+                <div class="menu-item-info">
+                    <h4>Espresso Express</h4>
+                    <p>Strong Italian espresso</p>
+                </div>
+                <span class="menu-item-price">CHF 4.00</span>
+                <div class="qty-control">
+                    <button class="qty-btn" onclick="changeQty(this,-1)" aria-label="Decrease">&#8722;</button>
+                    <span class="qty-num">0</span>
+                    <button class="qty-btn" onclick="changeQty(this,1)" aria-label="Increase">&#43;</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-name="Matcha Departure" data-price="5.50">
+                <img src="images/Matcha.jpg" alt="Matcha">
+                <div class="menu-item-info">
+                    <h4>Matcha Departure</h4>
+                    <p>Smooth matcha latte</p>
+                </div>
+                <span class="menu-item-price">CHF 5.50</span>
+                <div class="qty-control">
+                    <button class="qty-btn" onclick="changeQty(this,-1)" aria-label="Decrease">&#8722;</button>
+                    <span class="qty-num">0</span>
+                    <button class="qty-btn" onclick="changeQty(this,1)" aria-label="Increase">&#43;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── ORDER SUMMARY + FORM ── -->
+        <div class="order-form-panel">
+            <div class="order-summary">
+                <h3>Your Order</h3>
+                <div class="summary-items" id="summaryItems">
+                    <p class="summary-empty" id="summaryEmpty">No items selected yet.</p>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="totalPrice">CHF 0.00</span>
+                </div>
+            </div>
+
+            <form id="orderForm" style="margin-top: 20px;" novalidate>
+                <div class="form-grid">
+                    <div class="form-group full">
+                        <label for="order-name">Your Name</label>
+                        <input type="text" id="order-name" name="name" placeholder="e.g. Anna Müller" required autocomplete="name">
+                    </div>
+                    <div class="form-group full">
+                        <label for="order-email">Email Address</label>
+                        <input type="email" id="order-email" name="email" placeholder="anna@example.com" required autocomplete="email">
+                    </div>
+                    <div class="form-group full">
+                        <label for="pickup">Collection Time</label>
+                        <select id="pickup" name="pickup" required>
+                            <option value="">Select a time</option>
+                            <option>11:30</option><option>12:00</option><option>12:30</option>
+                            <option>13:00</option><option>13:30</option><option>18:00</option>
+                            <option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option>
+                        </select>
+                    </div>
+                    <div class="form-group full">
+                        <label for="order-notes">Special Requests</label>
+                        <textarea id="order-notes" name="notes" placeholder="Allergies, dietary requirements…"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">Place Order</button>
+                    <div class="success-msg" id="successMsg">&#10003;&nbsp; Order received! We'll have it ready for collection at your chosen time.</div>
+                    <div class="error-msg" id="errorMsg">Something went wrong. Please try again or call +41 44 123 45 67.</div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact</h4>
+                <p>The Train Café</p>
+                <p>Bahnhofstrasse 10</p>
+                <p>8001 Zurich</p>
+                <p>Tel. +41 44 123 45 67</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Opening Hours</h4>
+                <p>Mon–Sat: 11:00 – 22:30</p>
+                <p>Sun: 11:00 – 18:00</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Navigate</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="booking.html">Reserve a Table</a>
+                    <a href="order.html">Order Online</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2024 The Train Café, Zurich &nbsp;·&nbsp; All rights reserved</div>
+    </footer>
+
+    <script>
+        // ── API Gateway URL ───────────────────────────
+        // Replace with your actual API Gateway Invoke URL from Phase 3 Step 5
+        const API_URL = 'YOUR-API-GATEWAY-INVOKE-URL';
+
+        // ── Cart state ────────────────────────────────
+        const cart = {};  // { name: { price, qty } }
+
+        function changeQty(btn, delta) {
+            const item = btn.closest('.menu-item');
+            const qtyEl = item.querySelector('.qty-num');
+            const name = item.dataset.name;
+            const price = parseFloat(item.dataset.price);
+
+            let qty = parseInt(qtyEl.textContent) + delta;
+            if (qty < 0) qty = 0;
+            qtyEl.textContent = qty;
+
+            if (qty === 0) {
+                delete cart[name];
+            } else {
+                cart[name] = { price, qty };
+            }
+            updateSummary();
+        }
+
+        function updateSummary() {
+            const summaryEl = document.getElementById('summaryItems');
+            const emptyEl = document.getElementById('summaryEmpty');
+            const totalEl = document.getElementById('totalPrice');
+            const entries = Object.entries(cart);
+
+            // Clear previous rows (keep the empty message element)
+            summaryEl.querySelectorAll('.summary-row').forEach(r => r.remove());
+
+            if (entries.length === 0) {
+                emptyEl.style.display = 'block';
+                totalEl.textContent = 'CHF 0.00';
+                return;
+            }
+            emptyEl.style.display = 'none';
+
+            let total = 0;
+            entries.forEach(([name, { price, qty }]) => {
+                const lineTotal = price * qty;
+                total += lineTotal;
+                const row = document.createElement('div');
+                row.className = 'summary-row';
+                row.innerHTML = `<span>${name} &times;${qty}</span><span>$${lineTotal.toFixed(2)}</span>`;
+                summaryEl.appendChild(row);
+            });
+            totalEl.textContent = '$' + total.toFixed(2);
+        }
+
+        // ── Form submission ───────────────────────────
+        document.getElementById('orderForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const successMsg = document.getElementById('successMsg');
+            const errorMsg = document.getElementById('errorMsg');
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
+
+            const name  = document.getElementById('order-name').value.trim();
+            const email = document.getElementById('order-email').value.trim();
+            const pickup = document.getElementById('pickup').value;
+            const notes = document.getElementById('order-notes').value.trim();
+
+            if (!name || !email || !pickup) {
+                errorMsg.textContent = 'Please fill in your name, email, and collection time.';
+                errorMsg.style.display = 'block';
+                return;
+            }
+            if (Object.keys(cart).length === 0) {
+                errorMsg.textContent = 'Please add at least one item to your order.';
+                errorMsg.style.display = 'block';
+                return;
+            }
+
+            // Build items string for DynamoDB
+            const itemsSummary = Object.entries(cart)
+                .map(([n, { qty, price }]) => `${n} x${qty} (CHF ${(price*qty).toFixed(2)})`)
+                .join(', ');
+
+            btn.disabled = true;
+            btn.textContent = 'Placing Order…';
+
+            try {
+                const res = await fetch(API_URL + '/order', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, pickup, notes, items: itemsSummary })
+                });
+                if (!res.ok) throw new Error('Server error: ' + res.status);
+                const json = await res.json();
+
+                successMsg.style.display = 'block';
+                document.getElementById('orderForm').reset();
+                // Reset all qty buttons
+                document.querySelectorAll('.qty-num').forEach(el => el.textContent = '0');
+                Object.keys(cart).forEach(k => delete cart[k]);
+                updateSummary();
+                btn.textContent = 'Order Placed!';
+
+            } catch (err) {
+                console.error(err);
+                errorMsg.textContent = 'Something went wrong. Please try again or call +41 44 123 45 67.';
+                errorMsg.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'Place Order';
+            }
+        });
+    </script>
+
+</body>
+</html>

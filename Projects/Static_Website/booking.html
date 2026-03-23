@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Table — The Train Café</title>
+    <meta name="description" content="Reserve a table at The Train Café in Zurich. Choose your date, time and number of guests for an unforgettable dining experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="nav-left">
+                <img src="images/Logo.jpg" alt="The Train Café" class="mini-logo">
+                <nav class="nav-links">
+                    <a href="index.html#about-section">About Us</a>
+                    <a href="index.html#menu-section">Menu</a>
+                    <a href="booking.html">Reservation</a>
+                    <a href="order.html">Order Online</a>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="booking.html" class="btn-reserve">Reserve a Table</a>
+                <div class="lang-selector"><button>EN <span>&#8964;</span></button></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="hero-overlay">
+            <h1>Reserve Your Platform</h1>
+            <p>Every great journey begins with a seat</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <a href="index.html" class="back-link">Back to The Train Café</a>
+        <h2 class="section-title">Book a Table</h2>
+        <p class="form-tagline">"Some stops are worth the wait. Reserve yours."</p>
+
+        <form id="bookingForm" novalidate>
+            <div class="form-grid">
+
+                <p class="form-section-label">Your Details</p>
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Anna Müller" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="anna@example.com" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+41 44 000 00 00" autocomplete="tel">
+                </div>
+                <div class="form-group"><!-- spacer --></div>
+
+                <div class="form-divider"></div>
+                <p class="form-section-label">Your Reservation</p>
+
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Arrival Time</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select a time</option>
+                        <option>11:00</option><option>12:00</option><option>13:00</option>
+                        <option>14:00</option><option>18:00</option><option>19:00</option>
+                        <option>20:00</option><option>21:00</option><option>22:00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Select</option>
+                        <option>1</option><option>2</option><option>3</option>
+                        <option>4</option><option>5</option><option>6</option>
+                        <option>7</option><option>8+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="occasion">Occasion</label>
+                    <select id="occasion" name="occasion">
+                        <option value="">None</option>
+                        <option>Birthday</option><option>Anniversary</option>
+                        <option>Business lunch</option><option>Date night</option><option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group full">
+                    <label for="notes">Special Requests</label>
+                    <textarea id="notes" name="notes" placeholder="Dietary requirements, accessibility needs, or anything else…"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">Confirm Reservation</button>
+                <div class="success-msg" id="successMsg">&#10003;&nbsp; Your table is reserved! We look forward to welcoming you aboard. A confirmation has been sent to your email.</div>
+                <div class="error-msg" id="errorMsg">Something went wrong. Please try again or call us on +41 44 123 45 67.</div>
+            </div>
+        </form>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact</h4>
+                <p>The Train Café</p>
+                <p>Bahnhofstrasse 10</p>
+                <p>8001 Zurich</p>
+                <p>Tel. +41 44 123 45 67</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Opening Hours</h4>
+                <p>Mon–Sat: 11:00 – 22:30</p>
+                <p>Sun: 11:00 – 18:00</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Navigate</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="booking.html">Reserve a Table</a>
+                    <a href="order.html">Order Online</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2024 The Train Café, Zurich &nbsp;·&nbsp; All rights reserved</div>
+    </footer>
+
+    <script>
+        // ── Set min date to today ──────────────────────
+        const dateInput = document.getElementById('date');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+
+        // ── API Gateway URL ───────────────────────────
+        // Replace with your actual API Gateway Invoke URL from Phase 3 Step 5
+        // Example: https://abc123.execute-api.us-east-1.amazonaws.com
+        const API_URL = 'YOUR-API-GATEWAY-INVOKE-URL';
+
+        // ── Form submission ───────────────────────────
+        document.getElementById('bookingForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const btn = document.getElementById('submitBtn');
+            const successMsg = document.getElementById('successMsg');
+            const errorMsg = document.getElementById('errorMsg');
+
+            // Hide previous messages
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
+
+            // Collect form data
+            const data = {
+                name:     document.getElementById('name').value.trim(),
+                email:    document.getElementById('email').value.trim(),
+                phone:    document.getElementById('phone').value.trim(),
+                date:     document.getElementById('date').value,
+                time:     document.getElementById('time').value,
+                guests:   document.getElementById('guests').value,
+                occasion: document.getElementById('occasion').value,
+                notes:    document.getElementById('notes').value.trim()
+            };
+
+            // Basic validation
+            if (!data.name || !data.email || !data.date || !data.time || !data.guests) {
+                errorMsg.textContent = 'Please fill in all required fields.';
+                errorMsg.style.display = 'block';
+                return;
+            }
+
+            // Disable button while submitting
+            btn.disabled = true;
+            btn.textContent = 'Sending…';
+
+            try {
+                const res = await fetch(API_URL + '/booking', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (!res.ok) throw new Error('Server error: ' + res.status);
+                const json = await res.json();
+
+                // Show success
+                successMsg.style.display = 'block';
+                document.getElementById('bookingForm').reset();
+                btn.textContent = 'Reservation Confirmed';
+
+            } catch (err) {
+                console.error(err);
+                errorMsg.textContent = 'Something went wrong. Please try again or call +41 44 123 45 67.';
+                errorMsg.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'Confirm Reservation';
+            }
+        });
+    </script>
+
+</body>
+</html>

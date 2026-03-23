@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Platform Not Found — The Train Café</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap');
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #1a1209; color: #e8d9b8;
+      font-family: 'Lato', sans-serif; font-weight: 300;
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center; padding: 2rem; overflow: hidden;
+    }
+    .tracks { position: fixed; bottom: 0; left: 0; right: 0; height: 60px; display: flex; flex-direction: column; justify-content: flex-end; gap: 10px; opacity: 0.18; pointer-events: none; }
+    .track-line { height: 2px; background: repeating-linear-gradient(90deg, #c9a96e 0px, #c9a96e 40px, transparent 40px, transparent 60px); animation: slide 3s linear infinite; }
+    .track-line:first-child { animation-duration: 2.4s; }
+    @keyframes slide { from { background-position: 0 0; } to { background-position: 100px 0; } }
+    .steam { position: fixed; top: 60px; left: 50%; transform: translateX(-50%); display: flex; gap: 16px; pointer-events: none; }
+    .puff { width: 8px; height: 8px; border-radius: 50%; background: rgba(200,180,140,0.25); animation: rise 2.5s ease-out infinite; }
+    .puff:nth-child(2) { animation-delay: 0.6s; width: 12px; height: 12px; }
+    .puff:nth-child(3) { animation-delay: 1.2s; }
+    @keyframes rise { 0% { transform: translateY(0) scale(1); opacity: 0.4; } 100% { transform: translateY(-80px) scale(2.5); opacity: 0; } }
+    .rule { width: 60px; height: 1px; background: #c9a96e; margin: 1.5rem auto; opacity: 0.5; }
+    .error-code { font-family: 'Playfair Display', serif; font-size: clamp(6rem, 18vw, 10rem); font-weight: 600; color: #c9a96e; line-height: 1; letter-spacing: -2px; opacity: 0.9; }
+    .tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1rem, 3vw, 1.4rem); color: #c9a96e; letter-spacing: 0.04em; margin-bottom: 0.5rem; }
+    .sub { font-size: clamp(0.85rem, 2vw, 1rem); color: #9a8a6a; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.25rem; }
+    .message { max-width: 440px; font-size: clamp(0.9rem, 2vw, 1.05rem); color: #b8a882; line-height: 1.8; margin: 0 auto 2.5rem; }
+    .message em { font-family: 'Playfair Display', serif; font-style: italic; color: #c9a96e; }
+    .btn { display: inline-block; padding: 0.75rem 2.5rem; border: 1px solid #c9a96e; color: #c9a96e; font-family: 'Lato', sans-serif; font-weight: 400; font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: background 0.3s, color 0.3s; }
+    .btn:hover { background: #c9a96e; color: #1a1209; }
+    .station-name { position: fixed; bottom: 80px; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #4a3f2a; }
+  </style>
+</head>
+<body>
+  <div class="steam"><div class="puff"></div><div class="puff"></div><div class="puff"></div></div>
+  <p class="sub">The Train Café</p>
+  <div class="error-code">404</div>
+  <div class="rule"></div>
+  <p class="tagline">This platform doesn't exist.</p>
+  <p class="message">
+    It seems the destination you were looking for has no scheduled service.<br>
+    <em>Perhaps the train already left</em> — or this stop was never on the map.
+  </p>
+  <a href="index.html" class="btn">Return to the station</a>
+  <div class="tracks"><div class="track-line"></div><div class="track-line"></div></div>
+  <p class="station-name">Lost &amp; Found — Platform 404</p>
+</body>
+</html>
